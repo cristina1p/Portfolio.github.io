@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* width: 100vp; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: white; */
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* backdrop-filter: blur(10px); */
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 16px;
+    /* background-color: white; */
+}
+
+.logo {
+    width: 40px;
+    transition: 0.3s ease;
+    color: #ef8957;
+    /* background-color: white; */
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-shadow: 0 0 25px #ef8957;
+    transform: scale(1.1);
+}
+
+.navbar a {
+    background-color: white;
+    color: #ef8957;
+    font-size: 18px;  
+    font-weight: 500;  
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.container h1 {
+    font-size: 53px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.container h2 {
+    font-size: 38px;
+    
+}
+
+.container h3 {
+    font-weight: 400;
+    color: black;
+    margin-bottom: 0;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef8957;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #ef8957;
+    background-color: white;
+}
+
+#aboutMe {
+    height: 700px;
+    margin-top: 120px;
+    display: flex;
+
+}
+
+#aboutMe .aboutMe-container {
+    height: 700px;
+    background-color:#ea9971;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+#aboutMe img {
+    width: 220px;
+    height: 220px;
+    object-fit:contain;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#aboutMe h2 {
+    font-size: 48px;
+    color: white;
+    background-color: #ea9971;
+
+}
+
+#aboutMe p {
+    color: white;
+    background-color: #ea9971;
+    width: 60%;
+    font-size: 18px;
+}
+/* todo__: fix vertical scroll */
+#projects {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#projects .projects-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+#projects .projects-title h4 {
+    font-size: 36px;
+}
+
+#projects .projects-title p {
+    font-size: 20px;
+}
+
+#projects .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 40px;
+      
+}
+
+#projects .project-item img {
+    width: 400px;
+    height: 280px;
+    border-radius: 12px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    background-color:#fccd7f;
+    padding: 40px;
+    margin: 60px 0;
+    
+}
+
+#skills .title-skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    color: black;
+    gap: 10px;
+}
+
+#skills .title-skills h4 {
+    font-size: 32px;
+}
+
+#skills .title-skills p {
+    font-size: 18px;
+}
+
+#skills img {
+    width: 60px;
+}
+
+#skills .content-skills {
+    display: flex;
+    margin: 60px 40px;
+    
+}
+
+#skills .content-skills-first {
+width: 50%;
+}
+
+.content-skills-first .development {
+    display: flex;
+}
+
+.content-skills-first .technology {
+    display: flex;
+}
+
+.content-skills-first .responsive {
+    display: flex;
+}
+
+#skills .skill-text {
+    margin-left: 30px;
+}
+
+#skills .skill-text p {
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+}
+
+
+#skills .content-skills-second {
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+   justify-content: space-evenly;
+}
+
+#skills .skill {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#skills .level-skill-css {
+    width: 70%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#skills .level-skill-html {
+    width: 78%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#skills .level-skill-javascript {
+    width: 60%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#skills .level-skill-react {
+    width: 13%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#skills .name-skill {
+    padding-left: 4px;
+    color: white;
+}
+
+/*---------------------*/
+
+#contacts .container-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contacts .text-contacts {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: rgb(88, 88, 88);
+}
+
+#contacts .text-contacts h4 {
+    font-size: 30px;
+    width: 40%;
+    color:#3e3e3e;
+}
+
+.container-contacts .form-contacts {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.input-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+label {
+    color: #3e3e3e;
+    font-weight: semibold;
+}
+
+.inputInfo {
+    margin: auto;
+}
+
+input[type=text], input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3e3e3e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+
+
+#footer {
+display:flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+background-color:#eaa27f;
+gap: 15px;
+padding: 20px;
+margin-top: 60px;
+}
+
+#footer p {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+#footer .links {
+    display: flex;
+    gap: 10px;
+}
+
+#footer img {
+    width: 30px;
+}
+
+#footer .footer-text {
+    font-size: 16px;
+}
+
+#footer .arrow {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#footer .arrow img:hover {
+transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
